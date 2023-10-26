@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/brands.css">
+    <link rel="stylesheet" href="./css/solid.css">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+</head>
+<body>
+    <section>
+        <h1>Login</h1>
+     <div class="login-form">
+        <h4>Username</h4>
+        <div class="username-input">
+        <i class="fa fa-user"></i>
+        <input type="email" placeholder="    Type your username" id="username">
+        </div>
+        <h4>Password</h4>
+        <div class="paasword-input">
+            <i class="fa fa-lock"></i>
+            <input type="password" placeholder="   Type your password" id="password">
+        </div>
+        <p><a href="#">Forgot Password ?</a></p>
+
+        <button class="login-btn" onclick="func()" >
+            LOGIN
+        </button>
+
+        <div class="Alternative-signup">
+         Not a member<a href="#" class="sign-up"> Sign-up</a>
+        </div>
+     </div>
+
+    </section>
+    <script>
+        function func(){
+            var email = document.getElementById("username").value;
+            var pass = document.getElementById('password').value;
+            if (email == 'bastukur1997@gmail.com' && pass == '123456'){
+             alert("success full !")
+                window.location.assign("des.html")
+            }
+            else{
+                alert("Wrong entry invalid")
+            }
+        }
+    </script>
+</body>
+</html>
